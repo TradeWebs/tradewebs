@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TradeWebs — Websites for Trades. Fully Managed.</title>
+  <meta name="description" content="TradeWebs builds and manages professional websites for tradesmen across the UK. Fixed monthly fee covers hosting, domain, email and updates. No tech hassle." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" aria-label="TradeWebs home">
+        <img src="images/logo.png" alt="TradeWebs" class="nav__logo-img" />
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#examples">Examples</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="#contact" class="btn btn--sm">Get Started</a>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobile-menu" aria-hidden="true">
+      <a href="#how-it-works">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#examples">Examples</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn btn--full">Get Started</a>
+    </div>
+  </nav>
+
+  <!-- HERO — left-aligned editorial split layout -->
+  <section class="hero" id="hero">
+    <div class="hero__glow hero__glow--1" aria-hidden="true"></div>
+    <div class="container hero__inner">
+
+      <!-- Left column: text -->
+      <div class="hero__text">
+        <div class="hero__badge reveal">
+          <span class="badge__dot"></span>
+          Built for UK tradesmen
+        </div>
+        <h1 class="hero__heading reveal">
+          Your trade deserves<br />
+          a <span class="text-gradient">proper website.</span>
+        </h1>
+        <p class="hero__sub reveal">
+          We build and manage websites for plumbers, electricians, builders and roofers across the UK. One fixed monthly fee — domain, hosting, email and updates all included. You're on the tools. We handle the rest.
+        </p>
+        <!-- Inline testimonial — pulled high, breaks the template -->
+        <blockquote class="hero__quote reveal">
+          <p>"Got two new jobs in the first week. Paid for itself straight away."</p>
+          <cite>— Dave Holloway, Plumber, Bristol</cite>
+        </blockquote>
+        <div class="hero__actions reveal">
+          <a href="#contact" class="btn btn--lg" id="hero-cta">Get your website — from £29/mo</a>
+          <a href="#how-it-works" class="btn btn--ghost btn--lg">See how it works</a>
+        </div>
+        <div class="hero__trust reveal">
+          <span>Used by</span>
+          <div class="hero__trades">
+            <span>Plumbers</span>
+            <span>Electricians</span>
+            <span>Builders</span>
+            <span>Roofers</span>
+            <span>Decorators</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column: device mockup -->
+      <div class="hero__image reveal">
+        <img
+          src="images/hero.jpg"
+          alt="A plumber's professional website shown on a laptop and phone, built by TradeWebs"
+          class="hero__mockup"
+          width="1200"
+          height="675"
+          fetchpriority="high"
+        />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <div class="stats-strip">
+    <div class="container stats-strip__inner">
+      <div class="stat reveal">
+        <span class="stat__number">48hrs</span>
+        <span class="stat__label">Average time to go live</span>
+      </div>
+      <div class="stat__divider" aria-hidden="true"></div>
+      <div class="stat reveal">
+        <span class="stat__number">£0</span>
+        <span class="stat__label">Surprise bills. Ever.</span>
+      </div>
+      <div class="stat__divider" aria-hidden="true"></div>
+      <div class="stat reveal">
+        <span class="stat__number">24hr</span>
+        <span class="stat__label">Update turnaround</span>
+      </div>
+      <div class="stat__divider" aria-hidden="true"></div>
+      <div class="stat reveal">
+        <span class="stat__number">5</span>
+        <span class="stat__label">Trades served nationwide</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROBLEM — photo left, words right (already good, tighten copy) -->
+  <section class="problem" aria-label="The problem we solve">
+    <div class="container">
+      <div class="problem__inner reveal">
+        <div class="problem__photo">
+          <img
+            src="images/tradesman.jpg"
+            alt="A tradesman checking his phone after receiving a new job enquiry"
+            width="480"
+            height="360"
+          />
+        </div>
+        <div class="problem__words">
+          <p class="problem__text">
+            "I know I need a website. I just don't have time to sort it out."
+          </p>
+          <span class="problem__author">— Every tradesman, ever.</span>
+          <p class="problem__solution">That's exactly why TradeWebs exists. Fill in a short form, we build it within 48 hours, and we manage it for you every month after that. You don't touch a thing.</p>
+          <a href="#contact" class="btn btn--sm">Sort it today</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS — numbered list style, not 3 equal boxes -->
+  <section class="section" id="how-it-works">
+    <div class="container how-works__grid">
+      <div class="how-works__header">
+        <span class="section__label">Simple process</span>
+        <h2 class="section__title">Up and running<br/>in 48 hours.</h2>
+        <p class="section__sub">Three steps. We do the work. You get the enquiries.</p>
+        <a href="#contact" class="btn btn--sm" style="margin-top:1.5rem;">Start now</a>
+      </div>
+      <ol class="steps-list">
+        <li class="step-item reveal">
+          <div class="step-item__num" aria-hidden="true">01</div>
+          <div class="step-item__body">
+            <h3 class="step-item__title">Tell us about your trade</h3>
+            <p class="step-item__desc">Fill in a short form — your name, trade, location and the services you offer. Takes about 10 minutes. Send us any photos you want to use, or we'll source them for you.</p>
+          </div>
+        </li>
+        <li class="step-item reveal">
+          <div class="step-item__num" aria-hidden="true">02</div>
+          <div class="step-item__body">
+            <h3 class="step-item__title">We build and launch it</h3>
+            <p class="step-item__desc">Within 48 hours your website is live — your own .co.uk domain, business email forwarding, and Google Search Console all set up. We handle every bit of it.</p>
+          </div>
+        </li>
+        <li class="step-item reveal">
+          <div class="step-item__num" aria-hidden="true">03</div>
+          <div class="step-item__body">
+            <h3 class="step-item__title">We manage it every month</h3>
+            <p class="step-item__desc">New service to add? Photo to swap out? Just WhatsApp or email us. Changes are done within 24 hours. That's what the monthly fee covers.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+   <!-- PRICING -->
+  <section class="section section--dark" id="pricing">
+    <div class="container">
+      <div class="section__header section__header--left reveal">
+        <span class="section__label">Transparent pricing</span>
+        <h2 class="section__title">No hidden costs.<br/>Ever.</h2>
+        <p class="section__sub">One-off setup fee to get you live, then a simple monthly or annual retainer. That's everything — no renewal surprises, no hosting bills, no extras.</p>
+      </div>
+      <div class="pricing-cards">
+        <div class="pricing-card reveal" id="pricing-monthly">
+          <div class="pricing-card__header">
+            <h3 class="pricing-card__name">Monthly</h3>
+            <div class="pricing-card__price">
+              <span class="pricing-card__currency">£</span>
+              <span class="pricing-card__amount">29</span>
+              <span class="pricing-card__period">/month</span>
+            </div>
+            <p class="pricing-card__setup">+ £299 one-off setup fee</p>
+          </div>
+          <ul class="pricing-card__features" role="list">
+            <li>5-page custom trade website</li>
+            <li>.co.uk domain &amp; fast hosting</li>
+            <li>Business email forwarding</li>
+            <li>Unlimited WhatsApp updates</li>
+            <li>Google Search Console setup</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost btn--full" id="pricing-monthly-cta">Get started</a>
+        </div>
+
+        <div class="pricing-card pricing-card--featured reveal" id="pricing-yearly">
+          <span class="pricing-card__badge">Best Value</span>
+          <div class="pricing-card__header">
+            <h3 class="pricing-card__name">Annual</h3>
+            <div class="pricing-card__price">
+              <span class="pricing-card__currency">£</span>
+              <span class="pricing-card__amount">249</span>
+              <span class="pricing-card__period">/year</span>
+            </div>
+            <p class="pricing-card__setup">+ £299 one-off setup fee</p>
+            <p class="pricing-card__saving">Save £99 compared to monthly</p>
+          </div>
+          <ul class="pricing-card__features" role="list">
+            <li>Everything in Monthly</li>
+            <li><strong>100% website code ownership</strong></li>
+            <li>Priority support</li>
+            <li>Unlimited minor updates</li>
+            <li>Annual SEO health check</li>
+            <li>Google Business Profile setup included</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary btn--full" id="pricing-yearly-cta">Get started — Best Value</a>
+        </div>
+
+        <div class="pricing-card reveal" id="pricing-gbp">
+          <div class="pricing-card__header">
+            <h3 class="pricing-card__name">Add-Ons</h3>
+            <p class="pricing-card__addon-desc">Optional extras to grow faster</p>
+          </div>
+          <ul class="pricing-card__features pricing-card__features--addons" role="list">
+            <li>
+              <strong>Google Business Profile Setup</strong>
+              <span>£49 one-off</span>
+            </li>
+            <li>
+              <strong>GBP Monthly Management</strong>
+              <span>£20/month</span>
+            </li>
+            <li>
+              <strong>Extra pages</strong>
+              <span>£49 per page</span>
+            </li>
+            <li>
+              <strong>Dedicated Google Workspace Inbox</strong>
+              <span>£10/month per email</span>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost btn--full" id="pricing-addons-cta">Ask about add-ons</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT'S INCLUDED — 2 large + 4 smaller, broken grid -->
+  <section class="section" id="included">
+    <div class="container">
+      <div class="section__header section__header--left reveal">
+        <span class="section__label">Everything included</span>
+        <h2 class="section__title">One fee.<br/>Zero surprises.</h2>
+        <p class="section__sub">Your monthly retainer covers every cost. You'll never get an unexpected bill for hosting, a domain renewal, or a software licence.</p>
+      </div>
+      <div class="features-asymmetric">
+        <!-- 2 large feature cards -->
+        <div class="feature feature--large reveal" id="feature-website">
+          <div class="feature__tag">Core</div>
+          <h3 class="feature__title">Your website, built for your trade</h3>
+          <p class="feature__desc">A fast, mobile-friendly site designed around the work you do and the area you cover. Written in plain English — no jargon, no filler. Built to get you enquiries, not just look nice.</p>
+        </div>
+        <div class="feature feature--large reveal" id="feature-seo">
+          <div class="feature__tag">SEO</div>
+          <h3 class="feature__title">Found on Google for local searches</h3>
+          <p class="feature__desc">Every site is built to show up when someone nearby searches for your trade. We handle the technical setup — page titles, structured data, Google Search Console, the lot. You just get the calls.</p>
+        </div>
+        <!-- 4 smaller feature cards -->
+        <div class="feature feature--small reveal" id="feature-domain">
+          <h3 class="feature__title">Domain &amp; hosting</h3>
+          <p class="feature__desc">Your own .co.uk address and fast, secure hosting — all paid for in your monthly fee.</p>
+        </div>
+        <div class="feature feature--small reveal" id="feature-email">
+          <h3 class="feature__title">Email forwarding</h3>
+          <p class="feature__desc">Look the part with example@yourbusiness.co.uk forwarded straight to your normal phone inbox.</p>
+        </div>
+        <div class="feature feature--small reveal" id="feature-updates">
+          <h3 class="feature__title">Monthly updates</h3>
+          <p class="feature__desc">Just WhatsApp us what you need changed. Done within 24 hours.</p>
+        </div>
+        <div class="feature feature--small reveal" id="feature-support">
+          <h3 class="feature__title">Real support</h3>
+          <p class="feature__desc">Something breaks, we fix it. No call centres, no tickets — a real person who responds fast.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXAMPLES -->
+  <section class="section section--dark" id="examples">
+    <div class="container">
+      <div class="section__header section__header--left reveal">
+        <span class="section__label">Template examples</span>
+        <h2 class="section__title">Built for your trade,<br/>not just any trade.</h2>
+        <p class="section__sub">Each template is built around how that trade actually gets work — emergency callouts for plumbers, certification badges for electricians, project galleries for builders.</p>
+      </div>
+      <div class="examples">
+        <div class="example-card reveal" id="example-plumber">
+          <div class="example-card__preview example-card__preview--plumber">
+            <div class="mock-browser">
+              <div class="mock-browser__bar"><span></span><span></span><span></span></div>
+              <div class="mock-browser__content">
+                <div class="mock-site mock-site--plumber">
+                  <div class="mock-nav"></div>
+                  <div class="mock-hero">
+                    <div class="mock-h1"></div>
+                    <div class="mock-sub"></div>
+                    <div class="mock-btn"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="example-card__info">
+            <span class="example-card__trade">Plumber</span>
+            <h3 class="example-card__title">Frontline Plumbing</h3>
+            <p class="example-card__desc">Emergency callout section, customer reviews, and a clickable phone number front and centre.</p>
+          </div>
+        </div>
+        <div class="example-card reveal" id="example-electrician">
+          <div class="example-card__preview example-card__preview--electrician">
+            <div class="mock-browser">
+              <div class="mock-browser__bar"><span></span><span></span><span></span></div>
+              <div class="mock-browser__content">
+                <div class="mock-site mock-site--electrician">
+                  <div class="mock-nav"></div>
+                  <div class="mock-hero">
+                    <div class="mock-h1"></div>
+                    <div class="mock-sub"></div>
+                    <div class="mock-btn"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="example-card__info">
+            <span class="example-card__trade">Electrician</span>
+            <h3 class="example-card__title">Swift Electrical</h3>
+            <p class="example-card__desc">NICEIC badge in the hero, services listed plainly, and a quick quote request form.</p>
+          </div>
+        </div>
+        <div class="example-card reveal" id="example-builder">
+          <div class="example-card__preview example-card__preview--builder">
+            <div class="mock-browser">
+              <div class="mock-browser__bar"><span></span><span></span><span></span></div>
+              <div class="mock-browser__content">
+                <div class="mock-site mock-site--builder">
+                  <div class="mock-nav"></div>
+                  <div class="mock-hero">
+                    <div class="mock-h1"></div>
+                    <div class="mock-sub"></div>
+                    <div class="mock-btn"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="example-card__info">
+            <span class="example-card__trade">Builder</span>
+            <h3 class="example-card__title">Apex Construction</h3>
+            <p class="example-card__desc">Project photo gallery, before/after shots, and a full enquiry form for larger jobs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container faq-grid">
+      <div class="faq-header reveal">
+        <span class="section__label">Common questions</span>
+        <h2 class="section__title">Straight answers.</h2>
+        <p class="section__sub">No jargon. If you have a question that isn't here, just ask.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item reveal" id="faq-1">
+          <summary class="faq-item__question">Do I own my website?<span class="faq-icon" aria-hidden="true"></span></summary>
+          <p class="faq-item__answer">On our <strong>Annual Plan</strong>, yes — 100%! You own every line of code from Day 1. If you ever leave, we hand over all your website files and transfer your domain to you free of charge. On our <strong>Monthly Plan</strong>, you own your domain name, logo, and photos, while the website code is licensed to you as part of our ongoing managed service.</p>
+        </details>
+        <details class="faq-item reveal" id="faq-2">
+          <summary class="faq-item__question">How do I send you updates?<span class="faq-icon" aria-hidden="true"></span></summary>
+          <p class="faq-item__answer">However's easiest — WhatsApp, email or a call. Most of our clients just send a message and we sort it within 24 hours. No forms, no portals.</p>
+        </details>
+        <details class="faq-item reveal" id="faq-3">
+          <summary class="faq-item__question">What if I want to cancel?<span class="faq-icon" aria-hidden="true"></span></summary>
+          <p class="faq-item__answer">Cancel anytime on the monthly plan — no penalty, no awkward conversations. Annual plans don't carry refunds but we'll always try to find something that works.</p>
+        </details>
+        <details class="faq-item reveal" id="faq-4">
+          <summary class="faq-item__question">Will my website show up on Google?<span class="faq-icon" aria-hidden="true"></span></summary>
+          <p class="faq-item__answer">Every site is submitted to Google Search Console and built with local SEO from day one. Results take a few weeks, but we set everything up correctly so the site can rank. The Google Business Profile add-on speeds this up considerably.</p>
+        </details>
+        <details class="faq-item reveal" id="faq-5">
+          <summary class="faq-item__question">What's a Google Business Profile?<span class="faq-icon" aria-hidden="true"></span></summary>
+          <p class="faq-item__answer">It's the listing that shows on Google Maps when someone nearby searches for a tradesman. It's free to have and one of the most powerful ways to get local work. We set it up for £49 as a one-off add-on.</p>
+        </details>
+        <details class="faq-item reveal" id="faq-6">
+          <summary class="faq-item__question">How fast will my site load?<span class="faq-icon" aria-hidden="true"></span></summary>
+          <p class="faq-item__answer">Very fast. We build lightweight static sites — no bloated WordPress themes, no unnecessary plugins. Fast sites also rank better on Google, which is a bonus.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHATSAPP STRIP -->
+  <section class="wa-strip">
+    <div class="container wa-strip__inner">
+      <div class="wa-strip__text">
+        <p class="wa-strip__heading">Prefer to message?</p>
+        <p class="wa-strip__sub">Most tradesmen find it easier to just drop us a WhatsApp. We reply within a few hours — usually much faster.</p>
+      </div>
+      <a
+        href="https://wa.me/447438594912?text=Hi%2C%20I%27d%20like%20to%20get%20a%20website%20for%20my%20trade%20business.%20Can%20you%20help%3F"
+        class="wa-strip__btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        WhatsApp us for a quick reply
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT / CTA -->
+  <section class="section section--dark section--cta" id="contact">
+    <div class="container">
+      <div class="cta-grid">
+        <div class="cta-content reveal">
+          <span class="section__label">Ready to get started?</span>
+          <h2 class="cta-content__title">Get your website live in 48 hours</h2>
+          <p class="cta-content__sub">Fill in the form and we'll be back in touch the same day. No pressure, no obligation — just a quick chat about what you need.</p>
+          <ul class="cta-content__checklist" role="list">
+            <li>Free initial consultation</li>
+            <li>Live within 48 hours of signing up</li>
+            <li>Cancel anytime on monthly plan</li>
+          </ul>
+        </div>
+        <form class="contact-form reveal" name="contact" netlify id="contact-form" novalidate>
+          <input type="hidden" name="form-name" value="contact" />
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Joe Smith" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="trade">Your trade</label>
+            <select id="trade" name="trade" required>
+              <option value="" disabled selected>Select your trade</option>
+              <option>Plumber</option>
+              <option>Electrician</option>
+              <option>Builder</option>
+              <option>Roofer</option>
+              <option>Painter &amp; Decorator</option>
+              <option>Carpenter</option>
+              <option>Gas Engineer</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" placeholder="07700 900000" autocomplete="tel" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="example@yourbusiness.co.uk" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="message">Anything else? (optional)</label>
+            <textarea id="message" name="message" rows="3" placeholder="e.g. I already have a domain, I need 3 pages..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" id="contact-submit">Send — let's get started</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo" aria-label="TradeWebs home">
+          <img src="images/logo.png" alt="TradeWebs" class="nav__logo-img footer__logo-img" />
+        </a>
+        <p class="footer__tagline">Websites for trades. Fully managed.</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#examples">Examples</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer__copy">© 2026 TradeWebs. All rights reserved. Registered in England &amp; Wales.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp floating button -->
+  <a
+    href="https://wa.me/447438594912?text=Hi%2C%20I%27m%20interested%20in%20getting%20a%20website%20for%20my%20trade%20business."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat on WhatsApp"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="22" height="22">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span>WhatsApp us</span>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
