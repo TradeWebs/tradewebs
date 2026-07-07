@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Building & Roofing | Extensions & Loft Conversions Bristol</title>
+  <meta name="description" content="Federation of Master Builders (FMB) approved builders and roofing contractors in Bristol. House extensions, loft conversions, pitched roofs, and structural alterations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    :root {
+      --clr-trade-accent: #ea580c; /* Terracotta/Roofing orange accent */
+      --clr-trade-dark: #1c1917;
+    }
+    .demo-banner {
+      background: #18181b;
+      color: #faf8f5;
+      text-align: center;
+      padding: 0.6rem 1rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #27272a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .demo-banner a {
+      color: #f97316;
+      text-decoration: underline;
+      font-weight: 600;
+    }
+    .trade-nav {
+      background: var(--clr-white);
+      border-bottom: 1px solid var(--clr-border);
+      padding: 1.25rem 0;
+    }
+    .trade-nav__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .trade-logo {
+      font-family: var(--font-head);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--clr-trade-dark);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .trade-logo span { color: var(--clr-trade-accent); }
+    .trade-phone {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: #ffedd5;
+      border: 1px solid #fed7aa;
+      padding: 0.6rem 1.25rem;
+      border-radius: 50px;
+      color: #c2410c;
+      font-family: var(--font-head);
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s var(--ease);
+    }
+    .trade-phone:hover { background: #fed7aa; transform: translateY(-1px); }
+    .trade-hero {
+      padding: 5rem 0 6rem;
+      background: linear-gradient(135deg, #fafaf9 0%, #f5f5f4 100%);
+      border-bottom: 1px solid var(--clr-border);
+    }
+    .trade-hero__grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .trade-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #e7e5e4;
+      color: #44403c;
+      border: 1px solid #d6d3d1;
+      padding: 0.4rem 1rem;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      margin-bottom: 1.5rem;
+    }
+    .trade-h1 {
+      font-size: 3.25rem;
+      line-height: 1.15;
+      color: #1c1917;
+      margin-bottom: 1.25rem;
+    }
+    .trade-sub {
+      font-size: 1.15rem;
+      color: #57534e;
+      margin-bottom: 2rem;
+      max-width: 540px;
+      line-height: 1.6;
+    }
+    .trade-ctas {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .trade-card {
+      background: var(--clr-white);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      box-shadow: var(--clr-shadow);
+    }
+    .trade-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #1c1917;
+    }
+    .trade-card p {
+      color: #78716c;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .service-item {
+      background: var(--clr-white);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      transition: all 0.2s var(--ease);
+    }
+    .service-item:hover {
+      border-color: var(--clr-trade-accent);
+      box-shadow: var(--clr-shadow);
+      transform: translateY(-3px);
+    }
+    .service-item h4 { font-size: 1.25rem; color: #1c1917; margin-bottom: 0.75rem; }
+    .service-item p { color: #78716c; font-size: 0.95rem; line-height: 1.6; }
+    .service-price { display: inline-block; margin-top: 1rem; font-weight: 700; color: var(--clr-trade-accent); font-size: 0.9rem; }
+    @media (max-width: 768px) {
+      .trade-hero__grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .trade-h1 { font-size: 2.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TRADEWEBS DEMO BANNER -->
+  <div class="demo-banner">
+    <span>DEMO PORTFOLIO SITE: This is a live example of a TradeWebs £49/month builder &amp; roofer website.</span>
+    <a href="index.html#examples">&larr; Back to TradeWebs Agency</a>
+  </div>
+
+  <!-- TRADE NAVBAR -->
+  <header class="trade-nav">
+    <div class="container trade-nav__inner">
+      <a href="#" class="trade-logo">Apex<span>Building &amp; Roofing</span></a>
+      <a href="tel:01170000000" class="trade-phone">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        0117 920 3000
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="trade-hero">
+    <div class="container trade-hero__grid">
+      <div>
+        <div class="trade-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          Federation of Master Builders (FMB) Approved &amp; Insured
+        </div>
+        <h1 class="trade-h1">Quality Extensions, Roofing &amp; Loft Conversions in Bristol.</h1>
+        <p class="trade-sub">From single-storey rear kitchen extensions and dormer loft conversions to complete slate re-roofing and structural brickwork. Built on schedule, on budget, and to structural engineering standards.</p>
+        <div class="trade-ctas">
+          <a href="#quote" class="btn btn--primary btn--lg" style="background: var(--clr-trade-accent); border-color: var(--clr-trade-accent);">Book Site Survey</a>
+          <a href="#services" class="btn btn--ghost btn--lg">View Building Services</a>
+        </div>
+      </div>
+
+      <div class="trade-card" id="quote">
+        <h3>Book a Free Site Survey</h3>
+        <p>We visit your property, discuss your architectural drawings, and provide a comprehensive fixed quotation.</p>
+        <form onsubmit="event.preventDefault(); alert('This is a TradeWebs demo site form! On live client sites, enquiries are forwarded straight to the tradesman\'s email and WhatsApp.');">
+          <div style="margin-bottom: 1rem;">
+            <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:0.4rem; color:#1c1917;">Your Name *</label>
+            <input type="text" placeholder="e.g. Richard &amp; Sarah Baker" required style="width:100%; padding:0.75rem; border:1px solid var(--clr-border); border-radius:6px;" />
+          </div>
+          <div style="margin-bottom: 1rem;">
+            <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:0.4rem; color:#1c1917;">Phone Number *</label>
+            <input type="tel" placeholder="e.g. 07900 456789" required style="width:100%; padding:0.75rem; border:1px solid var(--clr-border); border-radius:6px;" />
+          </div>
+          <div style="margin-bottom: 1.5rem;">
+            <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:0.4rem; color:#1c1917;">Project Type *</label>
+            <select style="width:100%; padding:0.75rem; border:1px solid var(--clr-border); border-radius:6px; background:white;">
+              <option>Single / Double Storey Extension</option>
+              <option>Loft Conversion (Dormer / Velux)</option>
+              <option>New Pitched or Flat Roof Installation</option>
+              <option>Roof Repairs &amp; Chimney Repointing</option>
+              <option>Structural Alterations &amp; Steel Beams</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" style="background: var(--clr-trade-dark); border-color: var(--clr-trade-dark);">Request Free Survey</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <div style="text-align:center; max-width:600px; margin:0 auto;">
+        <span style="font-family:var(--font-head); font-weight:700; text-transform:uppercase; font-size:0.85rem; color:var(--clr-trade-accent); letter-spacing:1px;">What We Build</span>
+        <h2 style="font-size:2.5rem; color:#1c1917; margin:0.5rem 0 1rem;">Master Building &amp; Roofing Contractors</h2>
+        <p style="color:#78716c; font-size:1.05rem;">Backed by 20 years of construction experience across Bristol and the South West. All structural work guaranteed for 10 years.</p>
+      </div>
+
+      <div class="service-grid">
+        <div class="service-item">
+          <h4>House Extensions</h4>
+          <p>Expand your living space with bespoke rear kitchen extensions, wrap-around extensions, and two-storey additions. Full project management from foundations to plaster finish.</p>
+          <span class="service-price">Free architectural consultation</span>
+        </div>
+        <div class="service-item">
+          <h4>Loft Conversions</h4>
+          <p>Transform unused attic space into stunning master bedrooms with en-suites. Specialists in rear dormer, hip-to-gable, and Velux loft conversions.</p>
+          <span class="service-price">Comprehensive turnkey build</span>
+        </div>
+        <div class="service-item">
+          <h4>Pitched &amp; Slate Roofing</h4>
+          <p>Complete roof replacements using natural Welsh slate, clay tiles, or modern concrete interlocking tiles. Breathable membrane and treated battens as standard.</p>
+          <span class="service-price">10-year insurance backed warranty</span>
+        </div>
+        <div class="service-item">
+          <h4>EPDM Flat Roofing</h4>
+          <p>High-performance Firestone EPDM rubber roofing systems for garages, extensions, and dormers. Tough, seamless, and proven to last over 50 years.</p>
+          <span class="service-price">20-year membrane guarantee</span>
+        </div>
+        <div class="service-item">
+          <h4>Structural Brickwork &amp; Steels</h4>
+          <p>Removing load-bearing walls, installing RSJ steel beams to structural engineer calculations, underpinning, and traditional stonework restoration.</p>
+          <span class="service-price">Building control certified</span>
+        </div>
+        <div class="service-item">
+          <h4>Emergency Roof Repairs</h4>
+          <p>Storm damage repairs, slipped slates, leaking lead flashings, chimney stack repointing, and UPVC fascia and guttering replacement.</p>
+          <span class="service-price">Rapid leak containment</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section" style="background:#f8fafc; border-top:1px solid var(--clr-border);">
+    <div class="container">
+      <div style="text-align:center; max-width:600px; margin:0 auto 3rem;">
+        <span style="font-family:var(--font-head); font-weight:700; text-transform:uppercase; font-size:0.85rem; color:var(--clr-trade-accent); letter-spacing:1px;">Client Reputation</span>
+        <h2 style="font-size:2.25rem; color:#1c1917; margin:0.5rem 0 0.5rem;">What Property Owners Say</h2>
+        <div style="color:#eab308; font-size:1.25rem;">★★★★★</div>
+        <p style="color:#78716c; font-size:0.95rem;">5.0 / 5.0 rating on Checkatrade &amp; Federation of Master Builders</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:2rem;">
+        <div style="background:white; padding:2rem; border-radius:var(--radius-md); border:1px solid var(--clr-border);">
+          <div style="color:#eab308; margin-bottom:1rem;">★★★★★</div>
+          <p style="color:#44403c; font-style:italic; margin-bottom:1.5rem; line-height:1.6;">"Apex built a 6-metre rear kitchen extension with bifold doors on our 1930s semi in Henleaze. The site was kept immaculate, trades ran like clockwork, and they finished 3 days ahead of schedule."</p>
+          <strong style="display:block; color:#1c1917;">Simon &amp; Rachel Green</strong>
+          <span style="font-size:0.85rem; color:#78716c;">Henleaze, Bristol</span>
+        </div>
+        <div style="background:white; padding:2rem; border-radius:var(--radius-md); border:1px solid var(--clr-border);">
+          <div style="color:#eab308; margin-bottom:1rem;">★★★★★</div>
+          <p style="color:#44403c; font-style:italic; margin-bottom:1.5rem; line-height:1.6;">"Replaced our entire slate roof and lead valley after severe storm damage. They scaffolded the property promptly and worked through freezing cold weather to get us watertight. Honest, skilled tradesmen."</p>
+          <strong style="display:block; color:#1c1917;">Michael Thornton</strong>
+          <span style="font-size:0.85rem; color:#78716c;">Redland, Bristol</span>
+        </div>
+        <div style="background:white; padding:2rem; border-radius:var(--radius-md); border:1px solid var(--clr-border);">
+          <div style="color:#eab308; margin-bottom:1rem;">★★★★★</div>
+          <p style="color:#44403c; font-style:italic; margin-bottom:1.5rem; line-height:1.6;">"Completed a master bedroom dormer loft conversion with en-suite. The structural steel work was flawless, building control signed off without a single snag, and the finish is outstanding."</p>
+          <strong style="display:block; color:#1c1917;">Dr. Andrew Clarke</strong>
+          <span style="font-size:0.85rem; color:#78716c;">Clifton, Bristol</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:#1c1917; color:#a8a29e; padding:4rem 0 2rem; border-top:1px solid #292524;">
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:2rem; border-bottom:1px solid #292524; padding-bottom:3rem; margin-bottom:2rem;">
+      <div>
+        <a href="#" style="color:white; font-family:var(--font-head); font-size:1.5rem; font-weight:800; text-decoration:none; display:block; margin-bottom:0.5rem;">Apex<span>Building &amp; Roofing</span></a>
+        <p style="font-size:0.9rem; max-width:350px;">Federation of Master Builders (FMB) approved building and roofing contractors serving Greater Bristol.</p>
+      </div>
+      <div>
+        <strong style="color:white; display:block; margin-bottom:0.5rem;">Direct Site Estimator</strong>
+        <a href="tel:01170000000" style="color:var(--clr-trade-accent); font-size:1.25rem; font-weight:700; text-decoration:none;">0117 920 3000</a>
+      </div>
+    </div>
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; font-size:0.85rem;">
+      <p>&copy; 2026 Apex Building &amp; Roofing Ltd. All rights reserved.</p>
+      <p style="color:#78716c;">Website designed, hosted &amp; managed by <a href="index.html" style="color:#f97316; text-decoration:underline;">TradeWebs UK</a> (£49/month WaaS)</p>
+    </div>
+  </footer>
+
+</body>
+</html>
