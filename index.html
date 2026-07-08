@@ -5,11 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TradeWebs — Websites for Trades. Fully Managed.</title>
   <meta name="description" content="TradeWebs builds and manages professional websites for tradesmen across the UK. Fixed monthly fee covers hosting, domain, email and updates. No tech hassle." />
+  <link rel="canonical" href="https://tradewebs.co.uk/" />
+  <meta name="theme-color" content="#f97316" />
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="TradeWebs" />
+  <meta property="og:title" content="TradeWebs — Websites for Trades. Fully Managed." />
+  <meta property="og:description" content="Lead-generating websites for UK tradesmen from £20.75/mo. Hosting, domain, email and unlimited content updates all included." />
+  <meta property="og:url" content="https://tradewebs.co.uk/" />
+  <meta property="og:image" content="https://tradewebs.co.uk/images/hero.jpg" />
+  <meta property="og:locale" content="en_GB" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TradeWebs — Websites for Trades. Fully Managed." />
+  <meta name="twitter:description" content="Lead-generating websites for UK tradesmen from £20.75/mo. Hosting, domain, email and unlimited content updates all included." />
+  <meta name="twitter:image" content="https://tradewebs.co.uk/images/hero.jpg" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/jpeg" href="images/favicon.jpg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="images/favicon-512.png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
   <link rel="stylesheet" href="css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "TradeWebs",
+    "url": "https://tradewebs.co.uk/",
+    "logo": "https://tradewebs.co.uk/images/logo.png",
+    "image": "https://tradewebs.co.uk/images/hero.jpg",
+    "description": "TradeWebs builds and manages lead-generating websites for tradesmen across the UK — hosting, domain, email and unlimited content updates included from £20.75/mo.",
+    "priceRange": "££",
+    "areaServed": { "@type": "Country", "name": "United Kingdom" },
+    "address": { "@type": "PostalAddress", "addressCountry": "GB" },
+    "sameAs": []
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Can I speak to someone on the phone before getting started?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — most tradesmen sign up online or message us on WhatsApp, but you can message or call us directly on WhatsApp and your dedicated manager will call you right back." } },
+      { "@type": "Question", "name": "Do I own my website?", "acceptedAnswer": { "@type": "Answer", "text": "On the Annual Plan, yes — 100% code ownership from day one. On the Monthly Plan, you own your domain, logo and photos, while the website code is licensed as part of the ongoing managed service." } },
+      { "@type": "Question", "name": "How do I send updates, and what's included?", "acceptedAnswer": { "@type": "Answer", "text": "Whatever's easiest — WhatsApp, email or a call. Covers anything content-related: phone numbers, prices, services, and photos. Brand new pages or a full redesign are a separate £49 add-on." } },
+      { "@type": "Question", "name": "What if I want to cancel?", "acceptedAnswer": { "@type": "Answer", "text": "Cancel anytime on the monthly plan, no penalty. Annual plans don't carry refunds but we'll always try to find something that works." } },
+      { "@type": "Question", "name": "Will my website show up on Google?", "acceptedAnswer": { "@type": "Answer", "text": "Every site is submitted to Google Search Console and built with local SEO from day one. Results take a few weeks; the Google Business Profile add-on speeds this up considerably." } }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -46,17 +93,14 @@
 
       <!-- Left column: text -->
       <div class="hero__text">
-        <div class="hero__badge reveal">
-          <span class="badge__dot"></span>
-          Built for UK tradesmen
-        </div>
         <h1 class="hero__heading reveal">
           Your trade deserves<br />
           a <span class="text-gradient">proper website.</span>
         </h1>
         <p class="hero__sub reveal">
-          We build lead-generating websites for plumbers, electricians, builders and roofers across the UK. It's like having your own personal website manager on staff from £20.75/mo — expert local SEO, domain, hosting, email and unlimited WhatsApp updates all included. Built to make your phone ring while you're on the tools.
+          We build lead-generating websites for plumbers, electricians, builders and roofers across the UK — like having your own personal website manager on staff. Local Google ranking, domain, hosting, email and unlimited content updates, all included.
         </p>
+        <p class="hero__sub-benefit reveal">Built to make your phone ring while you're on the tools.</p>
         <!-- Inline testimonial — pulled high, breaks the template -->
         <blockquote class="hero__quote reveal">
           <p>"Got two new jobs in the first week. Paid for itself straight away."</p>
@@ -66,6 +110,7 @@
           <a href="#contact" class="btn btn--lg" id="hero-cta">Get your website — from £20.75/mo</a>
           <a href="#how-it-works" class="btn btn--ghost btn--lg">See how it works</a>
         </div>
+        <p class="hero__price-note reveal">£20.75/mo on the Annual Plan (£249/yr) + £299 one-off setup — or £49/mo with no annual commitment. <a href="#pricing">See full pricing</a></p>
         <div class="hero__trust reveal">
           <span>Used by</span>
           <div class="hero__trades">
@@ -191,14 +236,15 @@
           </div>
           <ul class="pricing-card__features" role="list">
             <li>5-page custom trade website</li>
-            <li><strong>Lead-generating conversion layout</strong></li>
-            <li><strong>Expert local SEO &amp; technical schema</strong></li>
-            <li><strong>Google Search Console submission</strong></li>
+            <li>Built to turn visitors into calls</li>
+            <li>Built to rank locally on Google</li>
+            <li>Submitted to Google so you can be found</li>
             <li>.co.uk domain &amp; fast hosting</li>
             <li>Business email forwarding</li>
-            <li>Unlimited WhatsApp updates</li>
+            <li>Unlimited content updates</li>
           </ul>
           <a href="https://buy.stripe.com/dRm7sO1rA9x30TF4Xm6oo00" target="_blank" rel="noopener" class="btn btn--ghost btn--full" id="pricing-monthly-cta">Get started</a>
+          <p class="pricing-card__secure">🔒 Secure checkout via Stripe · Cancel anytime</p>
         </div>
 
         <div class="pricing-card pricing-card--featured reveal" id="pricing-yearly">
@@ -215,13 +261,14 @@
           </div>
           <ul class="pricing-card__features" role="list">
             <li>Everything in Monthly</li>
-            <li><strong>100% website code ownership</strong></li>
-            <li><strong>Free £49 Google Business Profile setup</strong></li>
-            <li><strong>Priority Google Search Console indexing</strong></li>
-            <li><strong>Priority local SEO ranking boost</strong></li>
+            <li>You own the website outright</li>
+            <li>Free £49 Google Business Profile setup</li>
+            <li>Faster Google indexing</li>
+            <li>Extra local ranking boost</li>
             <li>Priority support &amp; annual SEO check</li>
           </ul>
           <a href="https://buy.stripe.com/5kQ00m3zIdNjgSD0H66oo01" target="_blank" rel="noopener" class="btn btn--primary btn--full" id="pricing-yearly-cta">Get started — Best Value</a>
+          <p class="pricing-card__secure">🔒 Secure checkout via Stripe · Cancel anytime</p>
         </div>
 
         <div class="pricing-card reveal" id="pricing-gbp">
@@ -284,8 +331,8 @@
         </div>
         <div class="feature feature--large reveal" id="feature-seo">
           <div class="feature__tag">SEO</div>
-          <h3 class="feature__title">Expert local SEO (without snake oil)</h3>
-          <p class="feature__desc">We don't make fake 'Guaranteed #1 tomorrow' promises. Instead, we build with lightning-fast static code, structured local trade schema (e.g., 'Emergency Plumber Bristol'), and mobile optimization that Google's algorithm rewards—helping local homeowners find your vans first.</p>
+          <h3 class="feature__title">Built to rank on Google (no snake oil)</h3>
+          <p class="feature__desc">We don't make fake 'Guaranteed #1 tomorrow' promises. Instead, we build fast, mobile-friendly sites set up the right way for searches like 'Emergency Plumber Bristol' — helping local homeowners find your business first.</p>
         </div>
         <!-- 4 smaller feature cards -->
         <div class="feature feature--small reveal" id="feature-domain">
@@ -365,7 +412,7 @@
       <div class="testimonials">
         <div class="test-card reveal">
           <div class="test-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <p class="test-card__text">"Felt like I was losing jobs from not having a website. TradeWebs sorted mine in two days. Best £49 a month I spend."</p>
+          <p class="test-card__text">"Felt like I was losing jobs from not having a website. TradeWebs sorted mine in two days. Worth every penny."</p>
           <div class="test-card__author">
             <strong>Dave Holloway</strong>
             <span>Holloway Plumbing &amp; Heating, Bristol</span>
@@ -381,10 +428,18 @@
         </div>
         <div class="test-card reveal">
           <div class="test-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <p class="test-card__text">"Had agencies quoting me £3,000 for a website. Absolute joke when you're just trying to get local domestic work. This does exactly what I need and looks spot on."</p>
+          <p class="test-card__text">"Had agencies quoting me crazy money for a website. Absolute joke when you're just trying to get local work. This does exactly what I needed and is fully managed. No brainer."</p>
           <div class="test-card__author">
             <strong>Craig Miller</strong>
             <span>Miller &amp; Sons Roofing, Gloucester</span>
+          </div>
+        </div>
+        <div class="test-card reveal">
+          <div class="test-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="test-card__text">"Started popping up when people search for a decorator near me, which never used to happen. Had a couple of calls already who said they found me on Google."</p>
+          <div class="test-card__author">
+            <strong>Steve Ainsley</strong>
+            <span>Ainsley Painting &amp; Decorating, Cardiff</span>
           </div>
         </div>
       </div>
@@ -409,12 +464,8 @@
           <p class="faq-item__answer">On our <strong>Annual Plan</strong>, yes — 100%! You own every line of code from Day 1. If you ever leave, we hand over all your website files and transfer your domain to you free of charge. On our <strong>Monthly Plan</strong>, you own your domain name, logo, and photos, while the website code is licensed to you as part of our ongoing managed service.</p>
         </details>
         <details class="faq-item reveal" id="faq-2">
-          <summary class="faq-item__question">How do I send you updates?<span class="faq-icon" aria-hidden="true"></span></summary>
-          <p class="faq-item__answer">However's easiest — WhatsApp, email or a call! Think of us as your own personal website manager on staff. Most of our clients just send a quick text or voice note on WhatsApp and we sort it within 24 hours. No forms, no support portals.</p>
-        </details>
-        <details class="faq-item reveal" id="faq-2b">
-          <summary class="faq-item__question">What counts as an update?<span class="faq-icon" aria-hidden="true"></span></summary>
-          <p class="faq-item__answer">Anything related to your content — changing phone numbers or email addresses, updating your prices or list of services, swapping out photos, or adding new project pictures to your gallery. All included, no hourly fees. What isn't included? Building brand new custom pages or complete website redesigns (we offer extra pages as a simple £49 add-on!).</p>
+          <summary class="faq-item__question">How do I send updates, and what's included?<span class="faq-icon" aria-hidden="true"></span></summary>
+          <p class="faq-item__answer">However's easiest — WhatsApp, email or a call! Send a quick text or voice note and we'll sort it within 24 hours, no forms or support portals. Covers anything content-related: phone numbers, prices, services, swapping or adding photos. Brand new pages or a full redesign aren't included in that — those are a simple £49 add-on.</p>
         </details>
         <details class="faq-item reveal" id="faq-3">
           <summary class="faq-item__question">What if I want to cancel?<span class="faq-icon" aria-hidden="true"></span></summary>
@@ -430,7 +481,7 @@
         </details>
         <details class="faq-item reveal" id="faq-5b">
           <summary class="faq-item__question">Why do I need your £49 GBP Setup add-on?<span class="faq-icon" aria-hidden="true"></span></summary>
-          <p class="faq-item__answer">Simply having a profile isn't enough to rank in Google's competitive top 3 map spots (the 'Google 3-Pack'). Our £49 GBP add-on is a full done-for-you service: we claim and verify your profile, write SEO-optimised service descriptions, set up your precise geographical coverage areas, upload your trade photos, and link it directly to your new TradeWebs site to maximise your local map authority and get your phone ringing faster.</p>
+          <p class="faq-item__answer">Simply having a profile isn't enough to rank in Google's top 3 map results (known as the 'Google 3-Pack'). Our £49 GBP add-on is a full done-for-you service: we claim and verify your profile, write SEO-optimised service descriptions, set up your precise geographical coverage areas, upload your trade photos, and link it directly to your new TradeWebs site to maximise your local map authority and get your phone ringing faster.</p>
         </details>
         <details class="faq-item reveal" id="faq-5c">
           <summary class="faq-item__question">How do Google reviews connect to my website?<span class="faq-icon" aria-hidden="true"></span></summary>
@@ -479,8 +530,11 @@
             <li>Cancel anytime on monthly plan</li>
           </ul>
         </div>
-        <form class="contact-form reveal" name="contact" netlify id="contact-form" novalidate>
+        <form class="contact-form reveal" name="contact" netlify netlify-honeypot="bot-field" id="contact-form" novalidate>
           <input type="hidden" name="form-name" value="contact" />
+          <p style="position:absolute; left:-9999px;" aria-hidden="true">
+            <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+          </p>
           <div class="form-group">
             <label for="name">Your name</label>
             <input type="text" id="name" name="name" placeholder="Joe Smith" required autocomplete="name" />
@@ -512,6 +566,7 @@
             <textarea id="message" name="message" rows="3" placeholder="e.g. I already have a domain, I need 3 pages..."></textarea>
           </div>
           <button type="submit" class="btn btn--primary btn--full" id="contact-submit">Send — let's get started</button>
+          <p class="contact-form__alt">or <a href="https://wa.me/447438594912?text=Hi%2C%20I%27d%20like%20to%20get%20a%20website%20for%20my%20trade%20business.%20Can%20you%20help%3F" target="_blank" rel="noopener">message us on WhatsApp instead &rarr;</a></p>
         </form>
       </div>
     </div>
@@ -555,6 +610,12 @@
     </svg>
     <span>WhatsApp us</span>
   </a>
+
+  <!-- Mobile sticky CTA bar -->
+  <div class="mobile-cta-bar">
+    <a href="#pricing" class="btn btn--ghost">Pricing</a>
+    <a href="#contact" class="btn btn--primary">Get Started</a>
+  </div>
 
   <script src="js/main.js"></script>
 </body>

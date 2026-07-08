@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Client Onboarding Portal | TradeWebs UK</title>
   <meta name="description" content="Welcome to TradeWebs! Complete your quick 5-minute onboarding profile so we can start building your custom trade website." />
+  <meta name="robots" content="noindex, nofollow" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/jpeg" href="images/favicon.jpg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
   <link rel="stylesheet" href="css/style.css" />
   <style>
     .onboarding-wrap {
@@ -197,8 +199,11 @@
         </div>
 
         <!-- Netlify Form -->
-        <form name="client-onboarding" method="POST" data-netlify="true" action="/onboarding-success.html">
+        <form name="client-onboarding" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/onboarding-success.html">
           <input type="hidden" name="form-name" value="client-onboarding" />
+          <p style="position:absolute; left:-9999px;" aria-hidden="true">
+            <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+          </p>
 
           <!-- Section 1: Business Profile -->
           <div class="form-section">
