@@ -75,15 +75,40 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-/* ── Contact form: simple feedback ────────────────────────── */
+/* ── Contact form: submit to the shared TradeWebs forms Worker ─── */
+const FORMS_ENDPOINT = 'https://tradewebs-forms.tradewebs.workers.dev/';
 const form = document.getElementById('contact-form');
 const submitBtn = document.getElementById('contact-submit');
+const statusEl = document.getElementById('contact-form-status');
 
 if (form) {
-  form.addEventListener('submit', e => {
-    // Netlify will handle the actual submission.
-    // This just gives instant visual feedback.
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
     submitBtn.textContent = 'Sending…';
     submitBtn.disabled = true;
+    if (statusEl) statusEl.textContent = '';
+
+    try {
+      const res = await fetch(FORMS_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(Object.fromEntries(new FormData(form))),
+      });
+      if (!res.ok) throw new Error('Request failed');
+
+      form.reset();
+      submitBtn.textContent = 'Sent — thank you!';
+      if (statusEl) {
+        statusEl.textContent = "Thanks — we'll be in touch the same day.";
+        statusEl.classList.add('contact-form__status--ok');
+      }
+    } catch (err) {
+      submitBtn.textContent = 'Send — let\'s get started';
+      submitBtn.disabled = false;
+      if (statusEl) {
+        statusEl.textContent = 'Something went wrong — please WhatsApp us instead using the link below.';
+        statusEl.classList.add('contact-form__status--error');
+      }
+    }
   });
 }

@@ -198,9 +198,8 @@
           <p class="onboarding-desc">We are thrilled to partner with you. Please complete this quick 5-minute profile so our team can start building your custom website today.</p>
         </div>
 
-        <!-- Netlify Form -->
-        <form name="client-onboarding" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/onboarding-success.html">
-          <input type="hidden" name="form-name" value="client-onboarding" />
+        <form id="onboarding-form" novalidate>
+          <input type="hidden" name="client_id" value="tradewebs-onboarding" />
           <p style="position:absolute; left:-9999px;" aria-hidden="true">
             <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
           </p>
@@ -287,7 +286,8 @@
             </div>
           </div>
 
-          <button type="submit" class="btn btn--primary btn--lg btn--full">Submit & Start My Build</button>
+          <button type="submit" class="btn btn--primary btn--lg btn--full" id="onboarding-submit">Submit & Start My Build</button>
+          <p class="contact-form__status" id="onboarding-form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
     </div>
@@ -303,5 +303,32 @@
     </div>
   </footer>
 
+  <script>
+    const form = document.getElementById('onboarding-form');
+    const submitBtn = document.getElementById('onboarding-submit');
+    const statusEl = document.getElementById('onboarding-form-status');
+
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      submitBtn.textContent = 'Submitting…';
+      submitBtn.disabled = true;
+      statusEl.textContent = '';
+
+      try {
+        const res = await fetch('https://tradewebs-forms.tradewebs.workers.dev/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(Object.fromEntries(new FormData(form))),
+        });
+        if (!res.ok) throw new Error('Request failed');
+        window.location.href = '/onboarding-success.html';
+      } catch (err) {
+        submitBtn.textContent = 'Submit & Start My Build';
+        submitBtn.disabled = false;
+        statusEl.textContent = 'Something went wrong submitting your details — please WhatsApp us your info instead so we can get started.';
+        statusEl.classList.add('contact-form__status--error');
+      }
+    });
+  </script>
 </body>
 </html>

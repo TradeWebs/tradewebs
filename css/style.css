@@ -1005,6 +1005,14 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 800; line-height: 1
 }
 .contact-form__alt a { color: var(--clr-orange); font-weight: 600; }
 
+.contact-form__status {
+  text-align: center;
+  font-size: 0.85rem;
+  margin: 0;
+}
+.contact-form__status--ok { color: #16a34a; }
+.contact-form__status--error { color: #dc2626; }
+
 @media (max-width: 768px) {
   .cta-grid { grid-template-columns: 1fr; }
   .contact-form { padding: 1.75rem; }

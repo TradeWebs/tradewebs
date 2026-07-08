@@ -530,8 +530,8 @@
             <li>Cancel anytime on monthly plan</li>
           </ul>
         </div>
-        <form class="contact-form reveal" name="contact" netlify netlify-honeypot="bot-field" id="contact-form" novalidate>
-          <input type="hidden" name="form-name" value="contact" />
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <input type="hidden" name="client_id" value="tradewebs" />
           <p style="position:absolute; left:-9999px;" aria-hidden="true">
             <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
           </p>
@@ -566,6 +566,7 @@
             <textarea id="message" name="message" rows="3" placeholder="e.g. I already have a domain, I need 3 pages..."></textarea>
           </div>
           <button type="submit" class="btn btn--primary btn--full" id="contact-submit">Send — let's get started</button>
+          <p class="contact-form__status" id="contact-form-status" role="status" aria-live="polite"></p>
           <p class="contact-form__alt">or <a href="https://wa.me/447438594912?text=Hi%2C%20I%27d%20like%20to%20get%20a%20website%20for%20my%20trade%20business.%20Can%20you%20help%3F" target="_blank" rel="noopener">message us on WhatsApp instead &rarr;</a></p>
         </form>
       </div>
