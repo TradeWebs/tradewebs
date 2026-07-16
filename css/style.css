@@ -1,5 +1,5 @@
 /* ============================================================
-   TRADEWEBS — style.css
+   TRADEWEBS - style.css
    Design: Light theme + vibrant orange. Clean professional feel.
    ============================================================ */
 
@@ -174,7 +174,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 800; line-height: 1
   object-fit: contain;
 }
 
-/* Footer logo — slightly larger since it has more space */
+/* Footer logo - slightly larger since it has more space */
 .footer__logo-img {
   height: 28px;
 }
@@ -233,7 +233,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 800; line-height: 1
   .nav__inner .btn { display: none; }
 }
 
-/* ── Hero — editorial 2-column split ────────────────────────── */
+/* ── Hero - editorial 2-column split ────────────────────────── */
 .hero {
   position: relative;
   padding-block: 8rem 6rem;
@@ -302,7 +302,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 800; line-height: 1
 }
 .hero__price-note a { color: inherit; text-decoration: underline; }
 
-/* Inline testimonial — pulled high, breaks the template pattern */
+/* Inline testimonial - pulled high, breaks the template pattern */
 .hero__quote {
   border-left: 3px solid var(--clr-orange);
   padding-left: 1.25rem;
@@ -482,7 +482,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 800; line-height: 1
   border-block: 1px solid var(--clr-border);
 }
 
-/* Centred header (default — kept for backwards compat) */
+/* Centred header (default - kept for backwards compat) */
 .section__header {
   text-align: center;
   max-width: 52ch;
@@ -493,7 +493,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 800; line-height: 1
   gap: 0.75rem;
 }
 
-/* Left-aligned header variant — used on most sections now */
+/* Left-aligned header variant - used on most sections now */
 .section__header--left {
   text-align: left;
   margin-inline: 0;
@@ -899,7 +899,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 800; line-height: 1
 }
 .faq-item__question::-webkit-details-marker { display: none; }
 
-/* Chevron icon — CSS border, no extra characters */
+/* Chevron icon - CSS border, no extra characters */
 .faq-icon {
   display: inline-block;
   flex-shrink: 0;

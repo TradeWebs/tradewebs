@@ -1,4 +1,4 @@
-/* TradeWebs — main.js */
+/* TradeWebs - main.js */
 
 /* ── Nav: scroll state ─────────────────────────────────────── */
 const nav = document.getElementById('nav');
@@ -97,16 +97,16 @@ if (form) {
       if (!res.ok) throw new Error('Request failed');
 
       form.reset();
-      submitBtn.textContent = 'Sent — thank you!';
+      submitBtn.textContent = 'Sent - thank you!';
       if (statusEl) {
-        statusEl.textContent = "Thanks — we'll be in touch the same day.";
+        statusEl.textContent = "Thanks - we'll be in touch the same day.";
         statusEl.classList.add('contact-form__status--ok');
       }
     } catch (err) {
-      submitBtn.textContent = 'Send — let\'s get started';
+      submitBtn.textContent = 'Send - let\'s get started';
       submitBtn.disabled = false;
       if (statusEl) {
-        statusEl.textContent = 'Something went wrong — please WhatsApp us instead using the link below.';
+        statusEl.textContent = 'Something went wrong - please WhatsApp us instead using the link below.';
         statusEl.classList.add('contact-form__status--error');
       }
     }
