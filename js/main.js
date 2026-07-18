@@ -99,7 +99,7 @@ if (form) {
       form.reset();
       submitBtn.textContent = 'Sent - thank you!';
       if (statusEl) {
-        statusEl.textContent = "Thanks - we'll be in touch the same day.";
+        statusEl.textContent = "Thanks - we'll be in touch shortly.";
         statusEl.classList.add('contact-form__status--ok');
       }
     } catch (err) {
